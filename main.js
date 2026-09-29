@@ -12,6 +12,15 @@ fetch('./data/comidas.json')          // Ruta al archivo JSON
     console.error('Error al leer el archivo JSON:', error);
   });
 
-let comidas = [];
+let comida = ["nombre","categoria","provincia","ingredientes"];
 
 const container = document.getElementById('comidaContainer');
+
+for (i < comidas.lenght) {
+comidaContainer.innerHTML=
+`
+<article class="card">
+ <h2>${comida[1].nombre}
+ <p>${comida[1].categoria}
+`
+}
