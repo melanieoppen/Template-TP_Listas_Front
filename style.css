@@ -5,5 +5,34 @@
 }
 
 .comida-container {
-  /* Estilos para el contenedor de la lista */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 24px;
+  flex-wrap: balance;
+}
+
+.card {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.card h2 {
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.categoria {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background-color: #e5f3e8;
+  color: #246b38;
+  font-size: 14px;
 }
