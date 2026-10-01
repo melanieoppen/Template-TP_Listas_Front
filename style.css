@@ -15,11 +15,12 @@ width: 100%;
 
 .card {
   width: 18vw;
-  height: 30vh;
+  height: 33vh;
   padding: 1rem;
   border: 0.2rem solid #F9CE94;
   border-radius: 0.5rem;
   background-color: white;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -34,15 +35,18 @@ width: 100%;
   justify-content: stretch;
 }
 
-.card p {
+.provincia {
   font-size: 1.5rem;
   color: #555;
 }
+.ingredientes {
+  font-size: 0.7rem
+}
 
 .categoria {
-  padding: 4px 10px;
-  border-radius: 12px;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.8rem;
   background-color: #947460;
   color: #fff5ec;
-  font-size: 14px;
+  font-size: 1rem;
 }

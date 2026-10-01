@@ -24,7 +24,8 @@ fetch('./data/comidas.json')
       container.innerHTML += `
         <article class="card">
           <h2>${comida.nombre}</h2>
-          <p>${comida.provincia}</p>
+          <p class="provincia">${comida.provincia}</p>
+          <p class="ingredientes">${comida.ingredientes}</p>
           <span class="categoria">${comida.categoria}</span>
         </article>
       `;
