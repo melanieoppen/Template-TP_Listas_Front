@@ -5,34 +5,44 @@
 }
 
 .comida-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  padding: 24px;
+width: 100%;
+  gap: 1rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
   flex-wrap: balance;
 }
 
 .card {
-  padding: 16px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  width: 18vw;
+  height: 30vh;
+  padding: 1rem;
+  border: 0.2rem solid #F9CE94;
+  border-radius: 0.5rem;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap:1rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .card h2 {
-  margin-bottom: 8px;
+  font-size: 2rem;
+  color: #f3a73c;
+  justify-content: stretch;
 }
 
 .card p {
-  margin-bottom: 12px;
+  font-size: 1.5rem;
   color: #555;
 }
 
 .categoria {
-  display: inline-block;
   padding: 4px 10px;
   border-radius: 12px;
-  background-color: #e5f3e8;
-  color: #246b38;
+  background-color: #947460;
+  color: #fff5ec;
   font-size: 14px;
 }
