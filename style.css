@@ -3,7 +3,45 @@
     margin: 0;
     padding: 0px;
 }
-
 .comida-container {
-  /* Estilos para el contenedor de la lista */
+width: 100%;
+  gap: 1rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: balance;
+}
+.card {
+  width: 18vw;
+  height: 33vh;
+  padding: 1rem;
+  border: 0.2rem solid #F9CE94;
+  border-radius: 0.5rem;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap:1rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card h2 {
+  font-size: 2rem;
+  color: #f3a73c;
+  justify-content: stretch;
+}
+.provincia {
+  font-size: 1.5rem;
+  color: #555;
+}
+.ingredientes {
+  font-size: 0.7rem
+}
+.categoria {
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.8rem;
+  background-color: #947460;
+  color: #fff5ec;
+  font-size: 1rem;
 }
