@@ -3,17 +3,25 @@
     margin: 0;
     padding: 0px;
 }
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .comida-container {
   width: 100vw;
   gap: 1rem;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
-  flex-wrap: balance;
+  flex-wrap: wrap;
 }
 .card {
   width: 18vw;
-  height: 33vh;
+  min-height: 33vh;
   padding: 1rem;
   border: 0.2rem solid #F9CE94;
   border-radius: 0.5rem;
@@ -21,9 +29,9 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  gap:1rem;
+  gap:0.7rem;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .card h2 {
@@ -36,7 +44,11 @@
   color: #555;
 }
 .ingredientes {
-  font-size: 0.7rem
+  font-size: 0.75rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .categoria {
   padding: 0.2rem 0.6rem;
@@ -44,4 +56,30 @@
   background-color: #947460;
   color: #fff5ec;
   font-size: 1rem;
+}
+
+li {
+  margin: .2rem;
+  padding: .2rem;
+  border: 0.1rem solid #f3a73c;
+  border-radius: 3rem;
+  background-color: #f3d9b6;
+}
+
+.addFood {
+  width: 80%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border:0.5rem solid #947460 ;
+}
+.tituloform{
+  font-size: 2rem;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }

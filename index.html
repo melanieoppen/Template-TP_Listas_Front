@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header>
+    <header class="filtros">
       <!-- Para filtros y navegacion -->
+      <select id="filtroCategoria">
+       <option value="">Todas las categorías</option>
+       <option value="Horno">Horno</option>
+       <option value="Parilla">Parilla</option>
+      </select>
     </header>
 
     <main class="comida-container" id="comidaContainer">
@@ -16,17 +21,22 @@
     </main>     
 
     <section class="addFood">
+      <h1 class="tituloform">Agregar comida</h1>
       <!-- Para el form para agregar comida -->
-       <form id="formulario">
-        <label for="nombrecomida">Nombre de la comida</label>
-        <input type="text" name="nombrecomida" placeholder="Ingrese comida">
-        <label for="nombrecategoria">Categoria</label>
+       <form id="agregarComidaForm">
+        <label for="nombre">Nombre de la comida</label>
+        <input type="text" id="nombre" placeholder="Ingrese comida">
+
+        <label for="categoria">Categoria</label>
         <input type="text" name="categoria" placeholder="Categoria">
-        <label for="nombreprovincia">provincia</label>
+
+        <label for="provincia">Provincia</label>
         <input type="text" name="provincia" placeholder="De que provincia viene">
-        <label for="ingredientes">Ingredientes</label>
+
+        <label for="ingredientes">Ingredientes (separados por comas)</label>
         <input type="text" name="ingredientes" placeholder="Cuales son sus ingredientes">
-        <button type="submit">Siguiente</button>
+
+        <button type="submit">Agregar</button>
        </form>
     </section>
 
