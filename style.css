@@ -16,7 +16,7 @@ body {
   gap: 1rem;
   padding: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .card {
@@ -82,4 +82,27 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+.filtros{
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: #F9CE94;
+}
+.buscador{
+  width: 50%;
+  height: 100%;
+  border: none;
+  padding-left: 1rem;
+  border-radius: 10rem;
+}
+.elegirFiltro{
+  width: 20%;
+  height: 100%;
+  border: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10rem;
 }
