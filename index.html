@@ -12,21 +12,10 @@
       <!-- Para filtros y navegacion -->
       <select class="elegirFiltro" id="filtroCategoria">
        <option value="">Todas las categorías</option>
-       <option value="Horno">Horno</option>
-       <option value="Parrilla">Parrilla</option>
-       <option value="Frito">Frito</option>
-       <option value="Guiso">Guiso</option>
       </select>
 
       <select class="elegirFiltro" id="filtroProvincia">
         <option value="">Todas las provincias</option>
-        <option value="Buenos Aires">Buenos Aires</option>
-        <option value="Salta">Salta</option>
-        <option value="Jujuy">Jujuy</option>
-        <option value="Córdoba">Córdoba</option>
-        <option value="Tucumán">Tucumán</option>
-        <option value="Entre Ríos">Entre Ríos</option>
-        <option value="Santa Fe">Santa Fe</option>
        </select>
     </header>
 
@@ -47,8 +36,11 @@
         <label for="provincia">Provincia</label>
         <input type="text" name="provincia" placeholder="De que provincia viene">
 
-        <label for="ingredientes">Ingredientes (separados por comas)</label>
-        <input type="text" name="ingredientes" placeholder="Cuales son sus ingredientes">
+        <div class="contenedor-ingredientes">
+          <label for="ingredientes">Ingredientes (separados por comas)</label>
+          <input type="text" class="ingrediente" placeholder="Ingredientes">
+        </div>
+        <button type="button" id="agregarIngrediente" class="botoningredientes">Nuevo ingrediente</button>
 
         <button type="submit">Agregar</button>
        </form>

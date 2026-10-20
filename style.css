@@ -110,3 +110,8 @@ li {
   padding-right: 1rem;
   border-radius: 10rem;
 }
+.contenedor-ingredientes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
